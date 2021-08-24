@@ -4,6 +4,8 @@ version: "3"
 
 services:
   app-service:
+    labels:
+      shipyard.route: '/'
     restart: always
     image: budibase.docker.scarf.sh/budibase/apps
     container_name: bbapps
